@@ -41,6 +41,15 @@ public class StudentDaoImpl implements StudentDAO {
 	@Override
 	public void updateRecord(Student student) {
 		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+		String query = "update student set student_name= ?, student_address= ? where student_id= ? ";
+		Object[] args = {student.getName(), student.getAddress(), student.getId()};
+		int row = jdbcTemplate.update(query, args);
+		if(row==1) {
+			System.out.println("Record updated successfully");
+		}else {
+			System.out.println("Updation Failed!");
+		}
 
 	}
 

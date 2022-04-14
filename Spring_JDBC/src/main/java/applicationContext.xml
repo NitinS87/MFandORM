@@ -28,6 +28,6 @@
     </bean>
     
     <bean id="student"
-    		class="com.ncu.Spring_JDBC.Student">
+    		class="com.ncu.Spring_JDBC.Student" scope="prototype">
     </bean>
 </beans>

@@ -16,6 +16,15 @@ public interface StudentDAO {
 
 	// method for delete a record into the database
 	public void deleteRecord(int id);
+	
+	//method for deleting all records from the database
+	public void deleteAllRecord();
+	
+	//method for inserting a batch into database
+	public void batchInsertRecords(List<Student> students);
+
+	//method for updating a batch into database
+	public void batchUpdateRecords(List<Student> students);
 
 	
 
